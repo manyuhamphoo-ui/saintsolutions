@@ -14,7 +14,7 @@ const fields = [
     name: 'email',
     label: 'Email Address',
     type: 'email',
-    placeholder: 'you@business.co.za'
+    placeholder: 'your@email.com'
   },
   {
     name: 'phone',
@@ -55,34 +55,42 @@ export default function Contact() {
         <div className="container-x grid gap-10 lg:grid-cols-3">
 
           <Reveal className="lg:col-span-2">
+
             <Form
               fields={fields}
               submitLabel="Send Message"
               successTitle="Message Sent Successfully!"
-              successText="Thank you for contacting SaintSolutions. Your enquiry has been received. We will contact you within one business day."
+              successText="Thank you for contacting SaintSolutions. Your enquiry has been received. We will get back to you within one business day."
             />
+
           </Reveal>
 
 
           <Reveal delay={0.1}>
+
             <aside className="space-y-8 rounded-2xl border border-white/10 bg-panel p-8">
 
 
+              {/* EMAIL */}
               <div>
+
                 <h3 className="font-semibold text-gold">
                   Email
                 </h3>
 
                 <a
-                  href="mailto:manyuhamphoo@gmail.com"
+                  href="mailto:saintsolutionsupport@gmail.com"
                   className="mt-2 block text-white/70 hover:text-gold transition"
                 >
-                  manyuhamphoo@gmail.com
+                  saintsolutionsupport@gmail.com
                 </a>
+
               </div>
 
 
+              {/* WHATSAPP */}
               <div>
+
                 <h3 className="font-semibold text-gold">
                   WhatsApp / Phone
                 </h3>
@@ -95,10 +103,23 @@ export default function Contact() {
                 >
                   063 682 1672
                 </a>
+
+
+                <a
+                  href="https://wa.me/27636821672"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 rounded-lg bg-gold px-5 py-2 text-black font-semibold hover:opacity-80 transition"
+                >
+                  Chat on WhatsApp
+                </a>
+
               </div>
 
 
+              {/* LOCATION */}
               <div>
+
                 <h3 className="font-semibold text-gold">
                   Location
                 </h3>
@@ -110,64 +131,84 @@ export default function Contact() {
                   <br />
                   Serving businesses nationwide and worldwide
                 </p>
+
               </div>
 
 
+              {/* HOURS */}
               <div>
+
                 <h3 className="font-semibold text-gold">
                   Business Hours
                 </h3>
 
                 <p className="mt-2 text-white/70">
+
                   Monday – Friday
                   <br />
                   07:00 – 22:00 SAST
+
                   <br />
                   <br />
+
                   Saturday – Sunday
                   <br />
                   07:00 – 12:00 SAST
+
                   <br />
                   <br />
+
                   WhatsApp enquiries available
+
                 </p>
+
               </div>
 
 
+              {/* AUDIT OFFER */}
               <div className="rounded-xl border border-gold/30 bg-gold/5 p-5">
 
                 <h3 className="font-semibold text-gold mb-2">
                   Free Website Audit
                 </h3>
 
+
                 <p className="text-white/70 text-sm leading-relaxed">
-                  Already have a website? SaintSolutions will analyse
-                  your website's design, speed, mobile experience,
-                  SEO, security, and customer journey to identify
-                  opportunities for growth.
+
+                  Already have a website?
+                  SaintSolutions will analyse your website's
+                  design, performance, mobile experience, SEO,
+                  security, and customer journey to identify
+                  opportunities for improvement and growth.
+
                 </p>
 
               </div>
 
 
+              {/* WHY US */}
               <div className="rounded-xl border border-white/10 p-5">
 
                 <h3 className="font-semibold text-white mb-2">
                   Why Choose SaintSolutions?
                 </h3>
 
+
                 <ul className="space-y-2 text-sm text-white/60">
+
                   <li>✓ Modern business websites</li>
                   <li>✓ E-commerce solutions</li>
                   <li>✓ Website improvement audits</li>
                   <li>✓ Digital growth strategies</li>
                   <li>✓ Personalised business support</li>
+
                 </ul>
 
               </div>
 
 
             </aside>
+
           </Reveal>
 
 
